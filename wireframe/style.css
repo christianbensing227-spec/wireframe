@@ -1,0 +1,116 @@
+/* style.css */
+/* 
+   =======================================================
+   COLORS USED (4 colors):
+   1. Primary Deep Blue: #0d1b2a
+   2. Accent Crimson: #9a031e
+   3. Off-White Text/Bg: #f4f4f9
+   4. Muted Gray: #6c757d
+
+   FONTS USED (2 fonts):
+   1. Headings: 'Cinzel', serif (Fallback: Georgia, serif)
+   2. Body Text: 'Playfair Display', serif (Fallback: serif)
+   =======================================================
+*/
+
+@import url('https://googleapis.com');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0d1b2a;
+    font-family: 'Playfair Display', serif;
+    color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1b263b;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 1px solid rgba(244, 244, 249, 0.1);
+}
+
+.cover {
+    background-image: url('https://unsplash.com');
+    background-size: cover;
+    background-position: center;
+    height: 140px;
+    position: relative;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1b263b;
+    margin-top: -55px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    color: #f4f4f9;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #9a031e;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e0e1dd;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+
+.details-list {
+    list-style: none;
+    text-align: left;
+    padding: 15px 25px;
+    background-color: #0d1b2a;
+    border-top: 1px solid rgba(244, 244, 249, 0.05);
+}
+
+.details-list li {
+    font-size: 0.9rem;
+    color: #e0e1dd;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(244, 244, 249, 0.05);
+}
+
+.details-list li:last-child {
+    border-bottom: none;
+}
+
+.details-list strong {
+    color: #f4f4f9;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    margin-right: 5px;
+}
